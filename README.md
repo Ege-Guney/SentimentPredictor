@@ -3,9 +3,9 @@ Sentiment Predictor with Python-Flask. Using both public libraries present in py
 Predicting the positivity of a given sentence at a high percentage. -Accessible through flask app.
 
 ---
-#This is a positive example
+# This is a positive example
 ![Positive Example](positive.png?raw=true)
 
 ---
-#This is a negative example
+# This is a negative example
 ![Negative Example](negative.png?raw=true)
