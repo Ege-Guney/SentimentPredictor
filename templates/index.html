@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SENTIMENT ANAYLSIS</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <form method="POST" action="">
+            <label class ="head_text" for="input_sentence">Enter a sentence:</label><br>
+            <input type="text" id="input_sentence" name="input_sentence" placeholder="Enter a sentence"><br><br>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        {% if sentiment %}
+
+            <div class="result">
+            <p>You entered: {{ input_sentence }}</p>
+                {% if sentiment == 'positive' %}
+                    The sentence is <strong style="color:green">Positive</strong>
+                {% else %}
+                    The sentence is <strong style="color:red">Negative</strong>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
